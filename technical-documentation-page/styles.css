@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  
+  #navbar {
+    font-family: "Museo Sans", Helvetica, Arial, san-serif;
+  }
+  
+  #navbar button {
+    all: unset;
+    padding: 10px;
+    display: block;
+    font-size: 1.15em;
+    width: 100%;
+  }
+  
+  #navbar a {
+    all: unset;
+  }
+  
+  #navbar a:hover, #navbar button:hover {
+    cursor: pointer;
+  }
+  
+  main {
+    font-family: Helvetica, Arial, san-serif;
+    text-align: justify;
+  }
+  
+  code {
+    background-color: whitesmoke;
+    font-size: 1.15em;
+  }
+  
+  @media (min-width: 728px) {
+    body {
+      flex-direction: row;
+    }
+  
+    #navbar {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      padding-right: 5px;
+      border-right: 2px solid black;
+      width: calc(20vw + 10px);
+    }
+  
+    main {
+      width: calc(80vw - 20px);
+      padding-left: 10px;
+      padding-right: 35px;
+    }
+  }
+  
